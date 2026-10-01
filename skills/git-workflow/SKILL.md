@@ -148,7 +148,7 @@ These are **soft limits, not blockers.** When the branch exceeds ~400 lines or t
 3. Work and commit in atomic steps.
 4. Before pushing: sync with `main` (`git fetch origin && git rebase origin/main` on unshared branches; `git merge origin/main` if the branch is shared).
 5. `git push -u origin <branch>` (first time) / `git push` (afterwards).
-6. When the user signals they are done (e.g. "listo", "ya terminamos", "es todo", "push final"): run the **pr-description** skill. It runs tests and a self-review, pushes the fixes, then generates the PR document.
+6. When the user signals they are done (e.g. "listo", "ya terminamos", "es todo", "push final"): run the **pr-description** skill. It runs tests and a self-review, pushes the fixes, generates the PR document and, if the user accepts, opens the PR with `gh`. The flow ends there: the lead developer reviews and merges.
 
 ## Pre-push checklist
 

@@ -13,7 +13,7 @@ Author: **Juan Camacho ([JuanJo24S](https://github.com/JuanJo24S))** · License:
 | Skill | What it does |
 |---|---|
 | [`git-workflow`](skills/git-workflow/SKILL.md) | `<type>/<description>` branches in English, Conventional Commits, nothing straight to `main`, standard flow and a pre-push checklist. |
-| [`pr-description`](skills/pr-description/SKILL.md) | When a branch is done: runs the tests, self-reviews, pushes and writes the PR document to `.pr/` from a fixed [template](skills/pr-description/template.md). |
+| [`pr-description`](skills/pr-description/SKILL.md) | When a branch is done: runs the tests, self-reviews, pushes and writes the PR document to `.pr/` from a fixed [template](skills/pr-description/template.md). If you accept, it opens the PR with `gh` and stops there: you do the merge. |
 | [`secrets-management`](skills/secrets-management/SKILL.md) | Rules for `.env`, `.gitignore` and centralized configuration, and what to do when a secret leaks. |
 | [`clean-code`](skills/clean-code/SKILL.md) | SOLID, readability, hexagonal architecture, a pattern catalog, testing and, when the project uses them, microservice principles. |
 

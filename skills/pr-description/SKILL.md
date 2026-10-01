@@ -1,6 +1,6 @@
 ---
 name: pr-description
-description: Runs tests and a self-review of the branch, then generates the Pull Request Markdown document for the lead developer to validate. Use when the user signals the branch work is finished ("listo", "terminamos", "es todo", "push final", "prepara el PR", "done", "prepare the PR").
+description: Runs tests and a self-review of the branch, generates the Pull Request Markdown document for the lead developer to validate and, if the user accepts, opens the PR with gh and stops there. Use when the user signals the branch work is finished ("listo", "terminamos", "es todo", "push final", "prepara el PR", "done", "prepare the PR").
 license: CC-BY-NC-SA-4.0 with an additional permission (see LICENSE.md)
 metadata:
   author: Juan Camacho (JuanJo24S)
@@ -80,11 +80,21 @@ Read [template.md](template.md), copy it and fill it in:
    - the link to open the PR on GitHub: `https://github.com/<owner>/<repo>/pull/new/<branch>`.
 4. Never reproduce the document's content in the chat, not even partially.
 
-If `gh` is installed and authenticated, also offer to create the PR directly:
-```bash
-gh pr create --base main --head <branch> --title "<title>" --body-file .pr/<file>.md
-```
-Only run it if the user confirms.
+### 8. Open the PR with `gh` (only if the user accepts)
+
+If `gh` is installed and authenticated (`gh auth status`), ask the user in one short question whether to open the PR now. Skip the question only if the user already asked for it in this request (e.g. "sube el PR", "abre el PR").
+
+- **The user accepts:**
+  1. Make sure the branch is on the remote (`git push -u origin <branch>` if it is not there yet). Run `git push` and `gh pr create` as **separate commands**: one command that mentions both `push` and `main` is blocked by **git-guard** as a push to main.
+  2. Create the PR with the document as its body and its `#` heading as the title:
+     ```bash
+     gh pr create --base main --head <branch> --title "<title>" --body-file .pr/<file>.md
+     ```
+  3. Check it: `gh pr view <number> --json url,mergeable,mergeStateStatus`.
+  4. **Stop there.** Give the user the PR URL, say whether GitHub reports it as mergeable, and remind them that the merge is theirs. Never run `gh pr merge`, approve the PR or push more changes to it unless the user asks for a specific change.
+- **The user declines, or `gh` is not available:** stop after step 7; the user opens the PR from the link.
+
+If the remote repository is empty (no `main` on GitHub yet), do not push the branch: the first branch pushed to an empty repository becomes its default branch. Ask the user to create `main` first, for example with GitHub's «Add a README» button, and continue once it exists. Don't suggest GitHub's "push an existing repository" commands: their `git branch -M main` renames the current work branch to `main`.
 
 ## Review alerts (soft, informative)
 

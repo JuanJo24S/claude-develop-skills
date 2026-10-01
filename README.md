@@ -11,7 +11,7 @@ Autor: **Juan Camacho ([JuanJo24S](https://github.com/JuanJo24S))** · Licencia:
 | Skill | Qué hace |
 |---|---|
 | [`git-workflow`](skills/git-workflow/SKILL.md) | Ramas `<tipo>/<descripcion>` en inglés, Conventional Commits, nada directo a `main`, flujo estándar y checklist antes del push. |
-| [`pr-description`](skills/pr-description/SKILL.md) | Al terminar una rama: corre los tests, hace una autorrevisión, sube los cambios y genera el documento del PR en `.pr/` con una [plantilla](skills/pr-description/template.md) fija. |
+| [`pr-description`](skills/pr-description/SKILL.md) | Al terminar una rama: corre los tests, hace una autorrevisión, sube los cambios y genera el documento del PR en `.pr/` con una [plantilla](skills/pr-description/template.md) fija. Si aceptas, abre el PR con `gh` y se detiene ahí: el merge lo haces tú. |
 | [`secrets-management`](skills/secrets-management/SKILL.md) | Reglas para `.env`, `.gitignore` y la configuración centralizada, y qué hacer si se filtra un secreto. |
 | [`clean-code`](skills/clean-code/SKILL.md) | SOLID, legibilidad, arquitectura hexagonal, catálogo de patrones, testing y, si el proyecto los usa, principios de microservicios. |
 
