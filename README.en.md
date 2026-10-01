@@ -133,6 +133,10 @@ The plugin finds the scripts in `.claude/hooks/`. Don't also copy the skills int
 bash hooks/git-guard.test.sh
 ```
 
+## Contributing
+
+Contributions are welcome: bug reports, improvements to the skills and to `git-guard`, compatibility with other Claude Code or OpenCode versions, and documentation. Read the [contributing guide](CONTRIBUTING.md#contributing-english) before opening a PR. For new skills or large changes, open an [issue](https://github.com/JuanJo24S/claude-develop-skills/issues) first.
+
 ## License
 
 © 2026 Juan Camacho (JuanJo24S). Everything in this repository is licensed under [CC BY-NC-SA 4.0](LICENSE) with an [additional permission for commercial use](PERMISO-ADICIONAL.md#additional-permission-for-commercial-use-english). The `LICENSE` file holds the official Spanish translation of the legal code; the original English text is at <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>.
