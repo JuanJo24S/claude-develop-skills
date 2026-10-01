@@ -1,0 +1,14 @@
+{
+  "name": "develop-skills",
+  "displayName": "Develop Skills",
+  "version": "1.0.0",
+  "description": "Skills for Git workflow, Pull Requests, secrets and clean code, plus the git-guard hook that enforces the Git rules.",
+  "author": {
+    "name": "Juan Camacho (JuanJo24S)",
+    "url": "https://github.com/JuanJo24S"
+  },
+  "homepage": "https://github.com/JuanJo24S/claude-develop-skills",
+  "repository": "https://github.com/JuanJo24S/claude-develop-skills",
+  "license": "CC-BY-NC-SA-4.0 with an additional permission (see PERMISO-ADICIONAL.md)",
+  "keywords": ["git", "conventional-commits", "pull-request", "secrets", "clean-code", "hooks"]
+}

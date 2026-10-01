@@ -1,0 +1,16 @@
+{
+  "name": "claude-develop-skills",
+  "owner": {
+    "name": "Juan Camacho (JuanJo24S)",
+    "url": "https://github.com/JuanJo24S"
+  },
+  "description": "Skills and hooks by Juan Camacho (JuanJo24S) for an orderly Git workflow, reviewable Pull Requests, secrets out of the code and clean code.",
+  "plugins": [
+    {
+      "name": "develop-skills",
+      "source": "./",
+      "description": "Skills for Git workflow, Pull Requests, secrets and clean code, plus the git-guard hook that enforces the Git rules.",
+      "category": "development"
+    }
+  ]
+}

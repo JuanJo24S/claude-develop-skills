@@ -1,0 +1,16 @@
+{
+  "description": "git-guard: blocks Git operations that break the workflow (push or commit to main, force push, .env files, secrets, branch names, PR merges).",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}\"/hooks/git-guard.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
