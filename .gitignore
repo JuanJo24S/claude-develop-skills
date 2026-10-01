@@ -1,0 +1,9 @@
+# Documentos de PR generados por la skill pr-description
+.pr/
+
+# Variables de entorno y claves
+.env
+.env.*
+!.env.example
+*.pem
+*.key
