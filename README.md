@@ -131,6 +131,10 @@ El plugin encuentra los scripts en `.claude/hooks/`. No copies las skills tambi�
 bash hooks/git-guard.test.sh
 ```
 
+## Contribuir
+
+Se aceptan aportes: reportes de errores, mejoras a las skills y a `git-guard`, compatibilidad con otras versiones de Claude Code u OpenCode, y documentación. Antes de abrir un PR, lee la [guía de contribución](CONTRIBUTING.md). Para skills nuevas o cambios grandes, abre primero un [issue](https://github.com/JuanJo24S/claude-develop-skills/issues).
+
 ## Licencia
 
 © 2026 Juan Camacho (JuanJo24S). Todo el contenido de este repositorio se distribuye bajo [CC BY-NC-SA 4.0](LICENSE) con un [permiso adicional de uso comercial](PERMISO-ADICIONAL.md).
