@@ -14,6 +14,7 @@ Autor: **Juan Camacho ([JuanJo24S](https://github.com/JuanJo24S))** · Licencia:
 | [`pr-description`](skills/pr-description/SKILL.md) | Al terminar una rama: corre los tests, hace una autorrevisión, sube los cambios y genera el documento del PR en `.pr/` con una [plantilla](skills/pr-description/template.md) fija. Si aceptas, abre el PR con `gh` y se detiene ahí: el merge lo haces tú. |
 | [`secrets-management`](skills/secrets-management/SKILL.md) | Reglas para `.env`, `.gitignore` y la configuración centralizada, y qué hacer si se filtra un secreto. |
 | [`clean-code`](skills/clean-code/SKILL.md) | SOLID, legibilidad, arquitectura hexagonal, catálogo de patrones, testing y, si el proyecto los usa, principios de microservicios. |
+| [`wompi`](skills/wompi/SKILL.md) | Cobros con Wompi (Colombia): widget en modo tokenización y en modo pago, fuentes de pago, firma de integridad, eventos verificados, conciliación, reembolsos, sandbox, PCI y obligaciones legales, con los valores por defecto del autor. |
 
 ### Hooks
 
